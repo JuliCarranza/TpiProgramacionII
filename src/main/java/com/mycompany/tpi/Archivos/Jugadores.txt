@@ -1,0 +1,2 @@
+Juan,Perez,12345678,28,8,Córdoba
+Luis,Gomez,23456789,30,8,Rosario
