@@ -10,10 +10,10 @@ import java.util.List;
 
 public class ManejadorArchivos {
     // Carga jugadores desde un archivo .txt
-    public static List<Jugador> cargarJugadores(String nombreArchivo) {
+    public static List<Jugador> cargarJugadores(String Jugadores) {
         List<Jugador> jugadores = new ArrayList<>();
 
-        try (BufferedReader br = new BufferedReader(new FileReader(nombreArchivo))) {
+        try (BufferedReader br = new BufferedReader(new FileReader(Jugadores))) {
             String linea;
             while ((linea = br.readLine()) != null) {
                 if (linea.trim().isEmpty()) continue; // ignora líneas vacías
@@ -39,10 +39,10 @@ public class ManejadorArchivos {
     }
 
     // Carga parejas desde archivo .txt usando la lista de jugadores ya cargados
-    public static List<Pareja> cargarParejas(String nombreArchivo, List<Jugador> jugadores) {
+    public static List<Pareja> cargarParejas(String Parejas, List<Jugador> jugadores) {
         List<Pareja> parejas = new ArrayList<>();
 
-        try (BufferedReader br = new BufferedReader(new FileReader(nombreArchivo))) {
+        try (BufferedReader br = new BufferedReader(new FileReader(Parejas))) {
             String linea;
             while ((linea = br.readLine()) != null) {
                 if (linea.trim().isEmpty()) continue;
@@ -79,5 +79,9 @@ public class ManejadorArchivos {
             }
         }
         return null; 
+    }
+
+    public static void cargarParejas(String cUsers54346OneDriveEscritoriotpiTpiProgra) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }
