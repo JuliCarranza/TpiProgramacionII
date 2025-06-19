@@ -28,6 +28,6 @@ public class TablaPosiciones {
 
     public int getJugados() {
         return ganados + perdidos;
-    }
+    }
 }
    

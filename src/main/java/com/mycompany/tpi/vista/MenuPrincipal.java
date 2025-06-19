@@ -4,8 +4,9 @@ import com.mycompany.tpi.controlador.ControladorTorneo;
 import java.util.Scanner;
 
 public class MenuPrincipal {
-    private ControladorTorneo controlador;
-    private Scanner sc;
+
+    private final ControladorTorneo controlador;
+    private final Scanner sc;
 
     public MenuPrincipal(ControladorTorneo controlador) {
         this.controlador = controlador;
@@ -28,16 +29,18 @@ public class MenuPrincipal {
             sc.nextLine(); // limpiar salto de línea
 
             switch (opcion) {
-                case 1: controlador.cargarDatosDesdeArchivos(); break;
-                case 2: controlador.generarFixture(); break;
-                case 3: controlador.mostrarFixture(); break;
-                case 4: controlador.registrarResultadoDesdeConsola(); break;
-                case 5: controlador.mostrarTabla(); break;
-                case 6: controlador.mostrarCampeon(); break;
-                case 0: System.out.println("Saliendo..."); break;
-                default: System.out.println("Opción inválida.");
+                case 1 -> controlador.cargarDatosDesdeArchivos();
+                case 2 -> controlador.generarFixture();
+                case 3 -> controlador.mostrarFixture();
+                case 4 -> controlador.registrarResultadoDesdeConsola();
+                case 5 -> controlador.mostrarTabla();
+                case 6 -> controlador.mostrarCampeon();
+                case 0 -> System.out.println("Saliendo...");
+                default -> System.out.println("Opción inválida.");
             }
 
-        } while (opcion != 0);
-    }
+        } while (opcion != 0);
+    }
+
 }
+        

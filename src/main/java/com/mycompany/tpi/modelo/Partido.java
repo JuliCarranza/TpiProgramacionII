@@ -1,5 +1,4 @@
-packa
-        ge com.mycompany.tpi.modelo;
+package com.mycompany.tpi.modelo;
 
 public class Partido {
     private int id;
@@ -62,6 +61,7 @@ public class Partido {
         }
         System.out.println("---------------------------");
     }
+  
 }
 
-}
+
