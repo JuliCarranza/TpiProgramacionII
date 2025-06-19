@@ -1,4 +1,5 @@
-package com.mycompany.tpi.modelo;
+packa
+        ge com.mycompany.tpi.modelo;
 
 public class Partido {
     private int id;
