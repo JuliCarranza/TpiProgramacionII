@@ -11,10 +11,10 @@ import java.util.List;
 public class Tpi {
     public static void main(String[] args) {
         // Ruta archivo jugadores
-        String archivoJugadores = "C:\\Users\\54346\\OneDrive\\Escritorio\\tpi\\TpiProgramacionII\\src\\main\\java\\com\\mycompany\\tpi\\Archivos\\Jugadores.txt";
+        String archivoJugadores = "archivos/Jugadores.txt";
 
         // Ruta archivo parejas
-        String archivoParejas = "C:\\Users\\54346\\OneDrive\\Escritorio\\tpi\\TpiProgramacionII\\src\\main\\java\\com\\mycompany\\tpi\\Archivos\\Parejas.txt";
+        String archivoParejas = "archivos/Parejas.txt";
 
         // Cargar jugadores
         List<Jugador> listaJugadores = ManejadorArchivos.cargarJugadores(archivoJugadores);
