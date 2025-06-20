@@ -68,8 +68,12 @@ public class Jugador {
 
     @Override
     public String toString() {
-        return "Jugador{" + "nombre=" + nombre + ", apellido=" + apellido + ", dni=" + dni + ", categoria=" + categoria + ", localidad=" + localidad + ", edad=" + edad + '}';
+        return String.format(
+            "Nombre: %-12s  Apellido: %-12s  DNI: %-12s  Categoria: %-12s  Localidad: %-12s  Edad: %-12d",
+            nombre, apellido, dni, categoria, localidad, edad
+        );
     }
+
 
     public String getNombreCompleto() {
         return nombre + " " + apellido;
