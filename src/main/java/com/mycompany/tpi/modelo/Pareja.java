@@ -43,7 +43,7 @@ public class Pareja {
     }
     
     public String getNombres() {
-    return jugador1.getNombre() + "y" + jugador2.getNombre();
+    return jugador1.getNombre() + " y " + jugador2.getNombre();
     }
     
 }

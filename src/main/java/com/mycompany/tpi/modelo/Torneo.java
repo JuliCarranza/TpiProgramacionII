@@ -55,7 +55,7 @@ public class Torneo {
                 TablaPosiciones tpPerdedora = tablaDePosiciones.get(perdedora);
                 tpPerdedora.partidoPerdido();
 
-                System.out.println("Resultado registrado con éxito.");
+                System.out.println("Resultado registrado con exito.");
                 return;
             }
         }
@@ -96,7 +96,7 @@ public class Torneo {
         }
 
         if (campeon != null) {
-            System.out.println("¡La pareja campeona es: " + campeon.getNombres() + " con " + maxPuntos + " puntos!");
+            System.out.println("La pareja campeona es: " + campeon.getNombres() + " con " + maxPuntos + " puntos");
         } else {
             System.out.println("No hay campeón aún.");
         }
@@ -113,19 +113,19 @@ public class Torneo {
 
     public Map<Pareja, TablaPosiciones> getTablaDePosiciones() {
         return tablaDePosiciones;
-    
 
     }
-    
+
     public void mostrarFixture() {
         System.out.println("-------- Fixture del Torneo --------");
         for (Partido partido : partidos) {
             System.out.print("Partido ID: " + partido.getId() + " - ");
-            System.out.print(partido.getPareja1().getNombres() + " vs " + partido.getPareja2().getNombres());
+            System.out.print("[" + partido.getPareja1().getId() + "] " + partido.getPareja1().getNombres()
+                    + " vs [" + partido.getPareja2().getId() + "] " + partido.getPareja2().getNombres());
 
             if (partido.isFinalizado()) {
                 System.out.println(" | Resultado: " + partido.getResultado()
-                        + " | Ganadora: " + partido.getGanadora().getNombres());
+                        + " | Ganadora: [" + partido.getGanadora().getId() + "] " + partido.getGanadora().getNombres());
             } else {
                 System.out.println(" | Estado: Pendiente");
             }
