@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ManejadorArchivos {
+
     // Carga jugadores desde un archivo .txt
     public static List<Jugador> cargarJugadores(String Jugadores) {
         List<Jugador> jugadores = new ArrayList<>();
@@ -16,16 +17,17 @@ public class ManejadorArchivos {
         try (BufferedReader br = new BufferedReader(new FileReader(Jugadores))) {
             String linea;
             while ((linea = br.readLine()) != null) {
-                if (linea.trim().isEmpty()) continue; // ignora líneas vacías
-
+                if (linea.trim().isEmpty()) {
+                    continue; // ignora líneas vacías
+                }
                 String[] datos = linea.split(",");
                 if (datos.length == 6) {
                     String nombre = datos[0];
                     String apellido = datos[1];
                     String dni = datos[2];
-                    int edad = Integer.parseInt(datos[3]);
-                    String categoria = datos[4];
-                    String localidad = datos[5];
+                    String categoria = datos[3];
+                    String localidad = datos[4];
+                    int edad = Integer.parseInt(datos[5]);
 
                     Jugador jugador = new Jugador(nombre, apellido, dni, categoria, localidad, edad);
                     jugadores.add(jugador);
@@ -45,7 +47,9 @@ public class ManejadorArchivos {
         try (BufferedReader br = new BufferedReader(new FileReader(Parejas))) {
             String linea;
             while ((linea = br.readLine()) != null) {
-                if (linea.trim().isEmpty()) continue;
+                if (linea.trim().isEmpty()) {
+                    continue;
+                }
 
                 String[] datos = linea.split(",");
                 if (datos.length == 3) {
@@ -78,7 +82,7 @@ public class ManejadorArchivos {
                 return j;
             }
         }
-        return null; 
+        return null;
     }
 
     public static void cargarParejas(String cUsers54346OneDriveEscritoriotpiTpiProgra) {
