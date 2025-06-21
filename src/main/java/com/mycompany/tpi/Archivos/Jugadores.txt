@@ -1,19 +1,19 @@
 
-Juan,Perez,12345678,8,Cordoba,28
+Hermes,Perez,12345678,8,Buenos Aires,28
 Luis,Gomez,23456789,8,Rosario,30
 
-Benjamin,Pereyra,46770486,8,Jujuy,15
-Luciana,Mendez,45239872,8,Corrientes,16
+Benjamin,Pereyra,46770486,8,Santa Cruz,24
+Luciana,Mendez,45239872,8,Corrientes,20
 
 Carlos,Ramirez,43829105,8,Salta,17
-Mariana,Lopez,44600321,8,Tucuman,15
+Mariana,Lopez,44600321,8,Tucuman,30
 
-Juan,Gomez,45980014,8,Cordoba,16
-Sofia,Alvarez,44821096,8,Jujuy,14
+Juan,Gomez,45980014,8,Cordoba,25
+Sofia,Alvarez,44821096,8,Jujuy,26
 
-Matias,Benitez,44339001,8,Misiones,17
-Valentina,Diaz,45472834,8,Salta,15
+Matias,Benitez,44339001,8,Misiones,18
+Valentina,Diaz,45472834,8,Salta,19
 
 Diego,Ferreyra,46231059,8,Santa Fe,16
-Camila,Ortiz,44012003,8,Jujuy,15
+Camila,Ortiz,44012003,8,Entre Rios,15
 

@@ -9,6 +9,7 @@ import com.mycompany.tpi.vista.MenuPrincipal;
 import java.util.List;
 
 public class Tpi {
+
     public static void main(String[] args) {
         // Ruta archivo jugadores
         String archivoJugadores = "src/main/java/com/mycompany/tpi/Archivos/Jugadores.txt";
