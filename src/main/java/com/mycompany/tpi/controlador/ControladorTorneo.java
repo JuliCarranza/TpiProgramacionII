@@ -20,8 +20,8 @@ public class ControladorTorneo {
 
     public void cargarDatosDesdeArchivos() {
         System.out.println("Cargando jugadores y parejas desde archivos...");
-        List<Jugador> jugadores = ManejadorArchivos.cargarJugadores("C:\\Users\\54346\\OneDrive\\Escritorio\\tpi\\TpiProgramacionII\\src\\main\\java\\com\\mycompany\\tpi\\Archivos\\Jugadores.txt");
-        List<Pareja> parejas = ManejadorArchivos.cargarParejas("C:\\Users\\54346\\OneDrive\\Escritorio\\tpi\\TpiProgramacionII\\src\\main\\java\\com\\mycompany\\tpi\\Archivos\\Parejas.txt", jugadores);
+        List<Jugador> jugadores = ManejadorArchivos.cargarJugadores("src/main/java/com/mycompany/tpi/Archivos/Jugadores.txt");
+        List<Pareja> parejas = ManejadorArchivos.cargarParejas("src/main/java/com/mycompany/tpi/Archivos/Parejas.txt", jugadores);
 
         if (parejas.isEmpty()) {
             System.out.println("No se cargaron parejas. Verifica el archivo.");
